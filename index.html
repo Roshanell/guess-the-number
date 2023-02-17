@@ -7,35 +7,68 @@
     <title>Document</title>
 </head>
 <body>
-    <body>
-  <h1> Guess the Number</h1>
-  <label for="userInput"> Your Guess: </label>
-  <input type="text" placeholder="Enter number here" id= "userInput"/>
-  <button id="submitButton"> Submit </button>
-  <br>
-  <h2> Mode: </h2>
-  <p id="gameModeArea"> </p>
-  <button id="levelOne"> Easy </button>
-  <button id="levelTwo"> Medium </button>
-  <button id="levelThree"> Hard </button>
-  <br/>
-  <br>
-  <button id="hintButton"> HINT </button>
-  <p id= "hintArea"></p>
 
- 
-  <section>
-  <h2> Score:</h2>
-    <p> Your Score: <span id="humanScoreArea"> </span> </p>
-    <p> Computer Score:  <span id="computerScoreArea"> </span>
-  </section>
-  <section>
-  <h2> Result:</h2>
-    <p id="messageArea"> </p>
-<!--    create a hint section that displays the lines 51-57 on the screen -->
-    <span> Total Guesses: <p id="guessTotalArea"> </p> </span>
-    <span> My Previous Guesses: <p id="previousGuessesArea"> </p> </span>
-  <section>  
+<body>
+  <div class="card">
+   <header>
+    <h1>Guess the Number</h1>
+  </header>
+
+<!--   <div class="card"> -->
+    <div class="card-title">
+      <h2>Guess</h2>
+    </div>
+    <div class="card-body">
+      <form>
+        <label for="userInput">Your Guess:</label>
+        <input type="text" placeholder="Enter number here" id="userInput">
+        <button id="submitButton">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">
+      <h2>Options</h2>
+    </div>
+    <div class="card-body">
+      <div>
+        <h3>Mode:</h3>
+        <p id="gameModeArea"></p>
+      </div>
+      <div>
+        <h3>Level:</h3>
+        <button id="levelOne">Easy</button>
+        <button id="levelTwo">Medium</button>
+        <button id="levelThree">Hard</button>
+      </div>
+      <div>
+        <button id="hintButton">Hint</button>
+        <p id="hintArea"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">
+      <h2>Game Status</h2>
+    </div>
+    <div class="card-body">
+      <div>
+        <h3 class="score">Score:</h3>
+        <p>Your Score: <span id="humanScoreArea"></span></p>
+        <p>Computer Score: <span id="computerScoreArea"></span></p>
+      </div>
+      <div>
+        <h3>Result:</h3>
+        <p id="messageArea"></p>
+        <div>Total Guesses: <span id="guessTotalArea"></span></div>
+        <div>My Previous Guesses: <span id="previousGuessesArea"></span></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html> 
 </body>
 </html>
 </body>

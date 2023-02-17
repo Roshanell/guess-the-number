@@ -8,7 +8,7 @@ You will have unlimted attempts to guess the number.
 
 After each guess, the computer will give you a hint whether the guess was too high or too low.
 
-If you guess the number correctly, you win the game!
+If you guess the number correctly, you win a point in the game!
 
 ## Features
 User-friendly interface
@@ -29,4 +29,5 @@ This game is open source and contributions are welcome! If you are interested in
 
 UI 
 Limit on guess amount on medium and hard numbers
-# guess-the-number
+Change to where 
+
