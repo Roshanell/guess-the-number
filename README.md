@@ -1,6 +1,10 @@
 ## Guess the Number Game
 A fun and simple game to test your number guessing skills!
 
+![Recording 2023-02-22 at 09 35 36](https://user-images.githubusercontent.com/96213223/220673001-b054e91e-4047-4192-ac81-a38b823bb331.gif)
+
+Try it out at: https://glittering-starburst-cf13fe.netlify.app/
+
 ## How to Play
 Depending on your level( easy, meduim, or hard ), the computer will randomly select a number between 1 and 15.
 
