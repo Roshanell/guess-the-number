@@ -68,25 +68,21 @@ function submitAnswer() {
 	// defining message Area
 	const messageArea = document.querySelector("#messageArea");
 	// console.log(messageArea);
-	let guessCount = humanScore + computerScore;
+	let guessCount = 1;
+	//let guessCount = userPreviousGuesses.length;
 	//compare random number to input val
 	if (randomNumber === userInputNumber) {
 		messageArea.innerHTML = winningStatement;
 		humanScore++;
 		// update the scores on the page
 		humanScoreArea.innerHTML = humanScore;
+		console.log("human score", humanScore);
 		computerScoreArea.innerHTML = computerScore;
-		guessTotalArea.innerHTML = guessCount;
-		guessCount++;
 		userPreviousGuesses.push(userInputNumber);
+		guessCount = userPreviousGuesses.length;
+		guessTotalArea.innerHTML = guessCount;
+		console.log("guessCountLength", guessCount);
 		console.log("userPreviousGuesses", userPreviousGuesses);
-		//     for(let i = 0; i < userPreviousGuessess.length; i++){
-		//       console.log(previousGuesses)
-		//previousGuessesArea.innerHTML = i ;
-
-		//     }
-
-		// console.log(userPreviousGuesses);
 		//generate a new num
 		randomNumber = getNewRandomNumber();
 		// console.log(randomNumber, "after");
@@ -94,15 +90,16 @@ function submitAnswer() {
 		messageArea.innerHTML = losingStatement;
 		computerScore++;
 		// update the scores on the page
-		guessTotalArea.innerHTML = guessCount;
-		guessCount++;
 		humanScoreArea.innerHTML = humanScore;
 		computerScoreArea.innerHTML = computerScore;
 		userPreviousGuesses.push(userInputNumber);
+		guessCount = userPreviousGuesses.length;
+		guessTotalArea.innerHTML = guessCount;
 		console.log("userPreviousGuesses", userPreviousGuesses);
 		// console.log(userPreviousGuesses);
 		previousGuessesArea.innerHTML = userPreviousGuesses;
 	}
+	console.log("humanScore", humanScoreArea);
 }
 
 function easyLevel() {
