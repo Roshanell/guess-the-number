@@ -30,4 +30,5 @@ This game is open source and contributions are welcome! If you are interested in
 UI 
 Limit on guess amount on medium and hard numbers
 Change to where 
+Update bug in total score
 

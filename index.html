@@ -1,76 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="Stylesheet" href="style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="card">
+			<header>
+				<h1>Guess the Number</h1>
+			</header>
 
-<body>
-  <div class="card">
-   <header>
-    <h1>Guess the Number</h1>
-  </header>
+			<!--   <div class="card"> -->
+			<div class="card-title">
+				<h2>Guess</h2>
+			</div>
+			<div class="card-body">
+				<form>
+					<label for="userInput">Your Guess:</label>
+					<input type="text" placeholder="Enter number here" id="userInput" />
+					<button id="submitButton">Submit</button>
+				</form>
+			</div>
+		</div>
 
-<!--   <div class="card"> -->
-    <div class="card-title">
-      <h2>Guess</h2>
-    </div>
-    <div class="card-body">
-      <form>
-        <label for="userInput">Your Guess:</label>
-        <input type="text" placeholder="Enter number here" id="userInput">
-        <button id="submitButton">Submit</button>
-      </form>
-    </div>
-  </div>
+		<div class="card">
+			<div class="card-title">
+				<h2>Options</h2>
+			</div>
+			<div class="card-body">
+				<div>
+					<h3>Mode:</h3>
+					<p id="gameModeArea"></p>
+				</div>
+				<div>
+					<h3>Level:</h3>
+					<button id="levelOne">Easy</button>
+					<button id="levelTwo">Medium</button>
+					<button id="levelThree">Hard</button>
+				</div>
+				<div>
+					<button id="hintButton">Hint</button>
+					<p id="hintArea"></p>
+				</div>
+			</div>
+		</div>
 
-  <div class="card">
-    <div class="card-title">
-      <h2>Options</h2>
-    </div>
-    <div class="card-body">
-      <div>
-        <h3>Mode:</h3>
-        <p id="gameModeArea"></p>
-      </div>
-      <div>
-        <h3>Level:</h3>
-        <button id="levelOne">Easy</button>
-        <button id="levelTwo">Medium</button>
-        <button id="levelThree">Hard</button>
-      </div>
-      <div>
-        <button id="hintButton">Hint</button>
-        <p id="hintArea"></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-title">
-      <h2>Game Status</h2>
-    </div>
-    <div class="card-body">
-      <div>
-        <h3 class="score">Score:</h3>
-        <p>Your Score: <span id="humanScoreArea"></span></p>
-        <p>Computer Score: <span id="computerScoreArea"></span></p>
-      </div>
-      <div>
-        <h3>Result:</h3>
-        <p id="messageArea"></p>
-        <div>Total Guesses: <span id="guessTotalArea"></span></div>
-        <div>My Previous Guesses: <span id="previousGuessesArea"></span></div>
-      </div>
-    </div>
-  </div>
-</body>
-</html> 
-</body>
-</html>
-</body>
+		<div class="card">
+			<div class="card-title">
+				<h2>Game Status</h2>
+			</div>
+			<div class="card-body">
+				<div>
+					<h3 class="score">Score:</h3>
+					<p>Your Score: <span id="humanScoreArea"></span></p>
+					<p>Computer Score: <span id="computerScoreArea"></span></p>
+				</div>
+				<div>
+					<h3>Result:</h3>
+					<p id="messageArea"></p>
+					<div>Total Guesses: <span id="guessTotalArea"></span></div>
+					<div>My Previous Guesses: <span id="previousGuessesArea"></span></div>
+				</div>
+			</div>
+		</div>
+		<script src="index.js
+    "></script>
+	</body>
 </html>
